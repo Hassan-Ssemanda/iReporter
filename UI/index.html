@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Create Red flag</title>
+  </head>
+  <body class="container">
+    <header id="i-header">
+      <h1>iReporter</h1>
+    </header>
+    <!-- iReporter sign in -->
+    <div class="nav-bar">
+      <nav class="flex-container">
+        <a href="index.html">Red Flags</a>
+        <a href="intervation.html">Intervations</a>
+        <a href="profile.html">My Profile</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="row">
+        <div class="left-bar col-lg-3 col-md-3 col-sm-4">
+          <nav class="red">
+            <a href="index.html">Create red flag record</a>
+            <a href="geolocation-flag.html">Add geolocation to flag</a>
+            <a href="image-flag.html">Add images to red flag</a>
+            <a href="video-flag.html">Add videos to red flag</a>
+          </nav>
+        </div>
+        <div class="right-bar col-lg-9 col-md-9 col-sm-8" >
+          <form class="flag_record" action="index.html" method="post">
+            What would like to report about?
+            <input type="text" name="subject" placeholder="Brief description">
+            <br>Provide more details here <br>
+            <input type="text" name="details" >
+            <button type="button" name="button">Submit here</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">2018 &copy; iReporter</div>
+  </body>
+</html>
