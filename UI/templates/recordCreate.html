@@ -1,7 +1,7 @@
 {%extends 'layout.html'%}
 
 {%block main_content%}
-  <form class="" action="index.html" method="post">
+  <form class="form_container" action="index.html" method="post">
     Create:
     <select name="type" size="1" class="s-type">
       <option value="red-flag">Red-Flag</option>
@@ -15,6 +15,6 @@
     Longitude: <input type="number" name="longitude" required max="180" min="0" id="long" oninput="" value="32.5992448"/><br>
     <p>Image: <input type="file" name="image" multiple accept=".jpeg, .png, .gif, .jpg" /></p>
     <p>Video: <input type="file" namae="video" multiple accept=".mp4, .ogg, .3gp"/></p>
-    <input type="submit" name="submit" value="Create" class="btn-create"/>
+    <button type="submit" class="btn">Submit</button>
   </form>
 {%endblock%}

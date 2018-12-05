@@ -52,7 +52,7 @@ form > button{
 }
 
 input[name="first_name"], input[name="sur_name"],input[name="email"],input[name="password"],button{
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 /* End SignIn page styles */
@@ -119,10 +119,9 @@ table, th, td {
     border-collapse: collapse;
     text-align: center;
     background-color: aliceblue;
-    margin-bottom:
 }
-
 /* End of my profile */
+
 
 /* madia queries */
 @media (min-width: 992px) {
