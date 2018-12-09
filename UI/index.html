@@ -13,8 +13,7 @@
     <!-- iReporter sign in -->
     <div class="nav-bar">
       <nav class="flex-container">
-        <a href="index.html">Red Flags</a>
-        <a href="intervation.html">Intervations</a>
+        <a href="index.html">Create Redflad or intervation</a>        
         <a href="profile.html">My Profile</a>
         <a href="admin.html">Admin</a>
       </nav>
@@ -22,26 +21,36 @@
 
     <div class="main-content">
       <div class="row">
-        <div class="left-bar col-lg-3 col-md-3 col-sm-4">
-          <nav class="red">
-            <a href="index.html">Create red flag record</a>
-            <a href="geolocation-flag.html">Add geolocation to flag</a>
-            <a href="image-flag.html">Add images to red flag</a>
-            <a href="video-flag.html">Add videos to red flag</a>
-          </nav>
-        </div>
-        <div class="right-bar col-lg-9 col-md-9 col-sm-8" >
-          <form class="flag_record" action="index.html" method="post">
-            What would like to report about?
-            <input type="text" name="subject" placeholder="Brief description">
-            <br>Provide more details here <br>
-            <input type="text" name="details" >
-            <button type="button" name="button">Submit here</button>
+        
+        <div class="right-bar" >
+          <form class="flag_record" action="" method="post">
+            Create:
+            <select name="" id=""> 
+              <option value="RedFlag">RedFlag</option>
+              <option value="IntervationRecord">IntervationRecord</option>
+            </select>
+            <p>Privide Summary?
+                <input type="text" name="subject" placeholder="Brief description">
+            </p>                        
+            Provide more details here <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>            
+            <br>Image: <input type="file" name="image" id="">
+            <br>Video : <input type="file" name="image" id="">
+            <br>           
+            <div>
+              <strong>location</strong>
+              <br>
+              Latitude: <input type="number" name="Latitude" id="">
+              Longitude: <input type="number" name="Latitude" id="">
+            </div>
+
+            <button type="button" name="button">Click to Submit</button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="footer">2018 &copy; iReporter</div>
+    <div class="footer"><br> 2018 &copy; iReporter</div>
+    <br>
   </body>
 </html>
