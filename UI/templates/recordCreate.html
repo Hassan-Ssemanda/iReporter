@@ -1,7 +1,7 @@
 {%extends 'layout.html'%}
 
 {%block main_content%}
-  <form class="form_container" action="index.html" method="post">
+  <form class="form_container" action="{{url_for('admin')}}" method="post">
     Create:
     <select name="type" size="1" class="s-type">
       <option value="red-flag">Red-Flag</option>

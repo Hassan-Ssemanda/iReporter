@@ -1,6 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session
+from flask_session import Session
 
 app = Flask(__name__)
+
+app.config['SESSION_PERMANENT'] = False
+app.config['SESSION_TYPE'] = 'filesytem'
+Session(app)
 
 @app.route('/sign_in')
 def sign_in():
@@ -18,10 +23,10 @@ def recordCreate():
 def intervation():
     return render_template('intervation.html')
 
-@app.route('/profile')
+@app.route('/profile/<username>')
 def profile():
     return render_template('profile.html')
 
-@app.route('/admin')
+@app.route('/admin', methods = [])
 def admin():
     return render_template('admin.html')
