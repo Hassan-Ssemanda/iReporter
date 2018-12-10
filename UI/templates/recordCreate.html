@@ -3,13 +3,12 @@
 {%block main_content%}
   <form class="form_container" action="{{url_for('admin')}}" method="post">
     Create:
-    <select name="type" size="1" class="s-type">
+    <select name="record_type" size="1" class="s-type">
       <option value="red-flag">Red-Flag</option>
       <option value="intervention">Intervention</option>
     </select>
-    <p>summary : <input type="text" name="summary" placeholder="summary" required size="50" maxlength="70"/></p>
-    Details:<br>
-    <textarea name="comments" required cols="50" rows="8"></textarea><br>
+    <p>Comment:</p>
+    <textarea name="comment" required cols="50" rows="8"></textarea><br>
     <p>Geolocation</p>
     Latitude:	<input type="number" name="latitude" required max="90" min="-90" id="lat" oninput="" value="0.3489792"/><br>
     Longitude: <input type="number" name="longitude" required max="180" min="0" id="long" oninput="" value="32.5992448"/><br>
