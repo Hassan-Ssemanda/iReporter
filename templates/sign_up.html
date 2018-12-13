@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/styles.css') }}">
+    <title>SignIn page</title>
+  </head>
+  <body class="container">
+    <header id="i-header">
+      <h1>iReporter</h1>
+    </header>
+    <!-- iReporter sign in -->
+    <div class="sign_in row">
+      Log in to iReporter
+      <form class="i-sign_in" action="index.html" method="post">
+        <input type="text" name="firstname" placeholder="First name">
+        <input type="text" name="lastname" placeholder="Last name">
+        <input type="text" name="othernames" placeholder="Other names">
+        <input type="email" name="email" placeholder="Email">
+        <input type="tel" name="phoneNumber" id="" placeholder="Phone number ie 256700000000">
+        <input type="text" name="username" placeholder="user name">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="password" placeholder="Confirm Password">
+        <button type="button" name="button">Log in</button>
+        <div class="new-user">
+          Already have an account? <a href="{{url_for('sign_in')}}">Sign in here</a>
+        </div>
+      </form>
+    </div><!-- End iReporter sign in -->
+
+    <div class="footer">2018 &copy; iReporter</div>
+  </body>
+</html>

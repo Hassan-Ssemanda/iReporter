@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/styles.css') }}">
+    <title>Intervation</title>
+  </head>
+  <body class="container">
+    <header id="i-header">
+      <h1>iReporter</h1>
+    </header>
+    <!-- iReporter sign in -->
+    <div class="nav-bar">
+      <nav class="flex-container">
+        <a href="{{url_for('recordCreate')}}">Create Red Flag or Intervation Record</a>
+        <a href="{{url_for('profile')}}">My Profile</a>
+        <a href="{{url_for('admin')}}">Admin</a>
+      </nav>
+    </div>
+
+    {%block main_content%}
+    {%endblock%}
+    <br>
+    <div class="footer"><br> 2018 &copy; iReporter</div>
+  </body>
+</html>
