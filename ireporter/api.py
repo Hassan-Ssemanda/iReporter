@@ -166,7 +166,7 @@ def create_redflag():
     redflags.append(redflag)
     return jsonify({
         'status': 201,
-        "message": " Successfully created",
+        'message': 'Successfully created',
         'redflag': redflag
     }), 201
 
